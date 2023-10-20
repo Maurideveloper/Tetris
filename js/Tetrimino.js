@@ -1,0 +1,69 @@
+function crearMapeoBaseTretriminos(){
+    //variable de nada
+ tetriminosBase = {
+    "Z":{
+        color:"red",
+        //Z seria como una matriz de 2*3. Lo que pasa es que con create vector le damos la forma al vector correspondiente. El 0,0 seria el punto que no cambia del vector al girar.
+        mapa:[
+            createVector(),
+            createVector(-1,-1),
+            createVector(0,-1),
+            createVector(1,0),
+        ]
+    },
+    "S":{
+        color:"green",
+        mapa:[
+            createVector(),
+            createVector(1,-1),
+            createVector(0,-1),
+            createVector(-1,0),
+        ]
+    },
+    "J":{
+        color:"orange",
+        mapa:[
+            createVector(),
+            createVector(-1,0),
+            createVector(-1,-1),
+            createVector(1,0),
+        ]
+    },
+    "L":{
+        color:"blue",
+        mapa:[
+            createVector(),
+            createVector(-1,0),
+            createVector(1,-1),
+            createVector(1,0),
+        ]
+    },
+    "T":{
+        color:"magenta",
+        mapa:[
+            createVector(),
+            createVector(-1,0),
+            createVector(1,0),
+            createVector(0,-1),
+        ]
+    },
+    "O":{
+        color:"yellow",
+        mapa:[
+            createVector(),
+            createVector(0,-1),
+            createVector(1,-1),
+            createVector(1, 0),
+        ]
+    },
+    "I":{
+        color:"whitesmoke",
+        mapa:[
+            createVector(),
+            createVector(-1,0),
+            createVector(1,0),
+            createVector(2,0),
+        ]
+    }
+}
+}
